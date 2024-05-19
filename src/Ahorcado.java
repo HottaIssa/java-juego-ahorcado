@@ -21,7 +21,7 @@ public class Ahorcado {
 
             System.out.println("Palabra a adivinar: "+ String.valueOf(letrasAdivinadas) + " (12 letras");
             System.out.println("Introduzca una letra");
-            char letra = sc.next().charAt(0);
+            char letra = Character.toLowerCase(sc.next().charAt(0));
             boolean letraCorrecta = false;
 
             for(int i = 0; i < palabraSecreta.length(); i++){
